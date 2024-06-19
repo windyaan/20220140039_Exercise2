@@ -1,0 +1,80 @@
+/* style.css */
+body { 
+    font-family: Arial, sans-serif; 
+    background-image: url('https://i.pinimg.com/originals/7e/c0/20/7ec020d14fcbdbe28b76c0cc03a07c63.jpg'); 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+
+.container { 
+    background-color: rgba(60, 60, 60, 0.5);
+    padding: 20px; 
+    box-shadow: 0 10px 10px; 
+    border-radius: 5px;
+    width: 400px;
+    height: 900px;
+} 
+ 
+.header { 
+    text-align: center; 
+    margin-bottom: 20px; 
+} 
+ 
+.header h3 { 
+    margin: 0; 
+    color: white; 
+} 
+ 
+label { 
+    display: block; 
+    margin-top: 10px; 
+    color: white; 
+} 
+ 
+input[type="text"], 
+input[type="date"], 
+textarea, 
+select { 
+    width: 100%; 
+    padding: 8px; 
+    margin-top: 5px; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    box-sizing: border-box; /* Added to ensure padding is included in the total width and height */
+} 
+ 
+input[type="radio"] { 
+    margin-top: 10px; 
+    margin-right: 5px; /* Added for better spacing between radio button and label */
+} 
+ 
+textarea { 
+    resize: vertical; 
+} 
+ 
+button { 
+    display: block; 
+    width: 100%; 
+    padding: 10px;
+    border: none; 
+    border-radius: 5px; 
+    color: white; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin-top: 20px; 
+}
+
+h1 {
+    color: white;
+}
+p { 
+    margin: 10px 0 5px; 
+    color: white;
+} 
+ 
+div { 
+    margin-top: 15px; 
+}

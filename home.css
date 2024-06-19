@@ -1,0 +1,39 @@
+body { 
+    font-family: Arial, sans-serif; 
+    background-image: url('https://i.pinimg.com/originals/7e/c0/20/7ec020d14fcbdbe28b76c0cc03a07c63.jpg'); 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+
+.media-section .audio-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+h1, h3 {
+    color: pink;
+    text-align: center;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container { 
+    background-color: rgba(60, 60, 60, 0.5);
+    padding: 20px; 
+    box-shadow: 0 10px 10px; 
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+} 
+ 

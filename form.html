@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Tiket</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ml-auto">
+        <a class="navbar-brand" href="home.html">BLINK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="form.html">Booking Ticket</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="text-center">FORMULIR TIKET</h1>
+        
+        <form id="Form" class="mt-4" onsubmit="return submitForm()">
+            <div class="form-group">
+                <label for="name">Nama:</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group"> 
+                <label for="tanggal">Tanggal Pesan</label> 
+                <input type="date" class="form-control" id="tanggal" name="tanggal" required> 
+            </div>
+            <div class="form-group">
+                <label for="seat">Seat</label> 
+                <select name="seat" id="seat" class="form-control" required> 
+                    <option value="">Pilih seat</option>
+                    <option value="VIP">VIP</option> 
+                    <option value="Platinum">Platinum</option>
+                    <option value="CAT1">CAT 1</option>
+                    <option value="CAT2">CAT 2</option>
+                    <option value="CAT3">CAT 3</option>
+                    <option value="CAT4">CAT 4</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="jk">Jenis Kelamin:</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="P" name="jk" value="P" required>
+                    <label class="form-check-label" for="P">P</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="L" name="jk" value="L" required>
+                    <label class="form-check-label" for="L">L</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="penyakit">Riwayat Penyakit</label> 
+                <textarea placeholder="Riwayat penyakit yang diderita" name="penyakit" id="penyakit" class="form-control" cols="30" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat</label> 
+                <textarea placeholder="Tulis alamatmu disini" name="alamat" id="alamat" class="form-control" cols="30" rows="5" required></textarea>
+            </div> 
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <div id="result" class="mt-5"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>
